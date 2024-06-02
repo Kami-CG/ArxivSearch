@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search any article in Arxiv!</title>
+    <link rel="stylesheet" href="static/search.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<main>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center">Search any article in Arxiv!</h1>
+                <form action="/search" class="mt-4" method="post">
+                    <div class="form-group">
+                        <input type="text" id="searchInput" class="form-control" name="search" placeholder="Search any article you want to read!">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="searchResults"></div>
+</main>
+</body>
+</html>
